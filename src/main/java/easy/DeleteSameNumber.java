@@ -33,7 +33,6 @@ public class DeleteSameNumber {
         int size = new DeleteSameNumber().removeDuplicates(nums);
         PrintUtil.printArray(nums, size);
     }
-
     //快慢指针法
     public int removeDuplicates(int[] nums) {
         //定义慢指针i
