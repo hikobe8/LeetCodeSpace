@@ -32,10 +32,10 @@ import utils.PrintUtil;
 public class RotateArray {
 
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4, 5, 6, 7};
-        rotate(array, 3);
-//        int[] array = {-1, -100, 3, 99};
-//        rotateByReverse(array, 2);
+//        int[] array = {1, 2, 3, 4, 5, 6, 7};
+//        rotate(array, 3);
+        int[] array = {-1, -100, 3, 99};
+        rotateByReverse(array, 2);
         PrintUtil.printArray(array);
     }
 
@@ -57,17 +57,17 @@ public class RotateArray {
         //反转全部
         reverse(nums, 0, nums.length - 1);
         //反转前k个
-        reverse(nums, 0, k);
+        reverse(nums, 0, k - 1);
         //反转后n-k个, n = 数组长度
-        reverse(nums, k + 1, nums.length - 1);
+        reverse(nums, k, nums.length - 1);
     }
 
     static void reverse(int[] nums, int start, int end) {
         int times = (end - start + 1) >> 1;
         for (int i = 0; i < times; i++) {
             int tmp = nums[end];
-            nums[end --] = nums[start];
-            nums[start ++] = tmp;
+            nums[end--] = nums[start];
+            nums[start++] = tmp;
         }
     }
 
