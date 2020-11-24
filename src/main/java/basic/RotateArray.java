@@ -1,6 +1,5 @@
-package easy;
+package basic;
 
-import sun.security.util.Length;
 import utils.PrintUtil;
 
 /**

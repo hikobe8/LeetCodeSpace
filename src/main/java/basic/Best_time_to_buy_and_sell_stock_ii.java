@@ -1,4 +1,4 @@
-package easy;
+package basic;
 
 /**
  * 股票的最佳买卖时机2

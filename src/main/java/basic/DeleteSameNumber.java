@@ -1,8 +1,6 @@
-package easy;
+package basic;
 
 import utils.PrintUtil;
-
-import java.util.HashMap;
 
 /**
  * Author:github.com/hikobe8

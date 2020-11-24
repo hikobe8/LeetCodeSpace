@@ -1,8 +1,6 @@
-package easy;
+package basic;
 
 import utils.PrintUtil;
-
-import java.util.HashMap;
 
 /**
  * 找出数组中重复的数字。
