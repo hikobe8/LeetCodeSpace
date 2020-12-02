@@ -1,4 +1,4 @@
-package basic;
+package basic.array;
 
 /**
  * 股票的最佳买卖时机2
