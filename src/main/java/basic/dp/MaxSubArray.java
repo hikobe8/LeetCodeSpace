@@ -33,10 +33,10 @@ public class MaxSubArray {
      * @return
      */
     public static int maxSubArray(int[] nums) {
-        int maxValue = 0;
         if (nums == null || nums.length < 1) {
-            return maxValue;
+            return 0;
         }
+        int maxValue = Integer.MIN_VALUE;
         int pre = 0;
         for (int num : nums) {
             pre = Math.max(pre + num, num);
@@ -52,12 +52,11 @@ public class MaxSubArray {
      * @return
      */
     public static int maxSubArray2(int[] nums) {
-        int maxValue = 0;
         if (nums == null || nums.length < 1) {
-            return maxValue;
+            return 0;
         }
         int cur = 0;
-        maxValue = Integer.MIN_VALUE;
+        int maxValue = Integer.MIN_VALUE;
         for (int num : nums) {
            cur += num;
            maxValue = Math.max(maxValue, cur);
