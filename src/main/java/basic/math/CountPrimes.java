@@ -1,4 +1,4 @@
-package basic.design;
+package basic.math;
 
 
 /**
