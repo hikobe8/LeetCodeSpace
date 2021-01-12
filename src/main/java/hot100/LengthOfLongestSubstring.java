@@ -60,10 +60,11 @@ public class LengthOfLongestSubstring {
         int max = 0;
         HashMap<Character, Integer> map = new HashMap<>();
         while (end < len) {
-            if (map.containsKey(s.charAt(end))) {
-                start = Math.max(map.get(s.charAt(end)) + 1, start);
+            char tmp = s.charAt(end);
+            if (map.containsKey(tmp)) {
+                start = Math.max(map.get(tmp) + 1, start);
             }
-            map.put(s.charAt(end), end);
+            map.put(tmp, end);
             end++;
             max = Math.max(max, end - start);
         }
