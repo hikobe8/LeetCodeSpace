@@ -74,7 +74,7 @@ public class IsValidBST {
     }
 
     /**
-     * 终须遍历二叉树生成数组，然后检查数组是否有序
+     * 中须遍历二叉树生成数组，然后检查数组是否有序
      * @param root
      * @return
      */
