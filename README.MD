@@ -11,9 +11,39 @@ color: #E43437;
 </style>
 
 
-##二叉树
+## 二叉树
 
 ### BFS(Breadth-First-Search) 宽度优先查询
+
+BFS 常见代码模板
+
+```$java
+    //存放每层元素的队列，队列为先进先出的结构
+    Queue<TreeNode> queue = new 
+    LinkedList<>();
+    //将根节点插入队列
+    queue.offer(root);
+    //开始遍历队列，每次循环为二叉树的一层
+    while (!queue.isEmpty()) {
+        //获取当前层的宽度
+        int size = queue.size();
+        //开始遍历当前层的所有节点
+        for (int i = 0; i < size; i++) {
+            //获取节点
+            TreeNode curr = queue.poll();
+            //继续添加当前节点的左节点到下一层
+            if (curr.left != null) {
+                queue.offer(curr.left);
+            }
+            //继续添加当前节点的右到下一层
+            if (curr.right != null) {
+                queue.offer(curr.right);
+            }
+        }
+        
+    }
+
+```
 
 常见题型
 
