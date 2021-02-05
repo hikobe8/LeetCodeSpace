@@ -103,7 +103,7 @@ Top Down DFS 从上往下递归
 * [x] 简单[104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree)
 * [x] 困难[124. 二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)
 * [x] 中等[129. 求根到叶子节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers)
-* [ ] 中等[98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+* [x] 中等[98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
 * [x] 简单[110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
 * [ ] 中等[113. 路径总和 II](https://leetcode-cn.com/problems/path-sum-ii/)
 * [ ] 中等[236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
