@@ -37,26 +37,54 @@ import java.util.Queue;
  */
 public class MinDepth {
 
+    /**
+     * 深度优先
+     * @param root
+     * @return
+     */
     public int minDepth(TreeNode root) {
-        int depth = 0;
-        if (root == null)
-            return depth;
+        if(null == root)
+            return 0;
+        if(null == root.left && null == root.right)
+            return 1;
+        int level = Integer.MAX_VALUE;
+        if(null != root.left) {
+            level = Math.min(minDepth(root.left), level);
+        }
+        if(null != root.right) {
+            level = Math.min(minDepth(root.right), level);
+        }
+        return level + 1;
+    }
+
+    /**
+     * 广度优先
+     * @param root
+     * @return
+     */
+    public int minDepth2(TreeNode root) {
+        if(null == root)
+            return 0;
+
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
-        while (!queue.isEmpty()) {
-            depth++;
+        int level = 0;
+        while (!queue.isEmpty()){
+            level ++;
             int size = queue.size();
             for (int i = 0; i < size; i++) {
-                TreeNode curr = queue.poll();
-                if (curr.left == null && curr.right == null)
-                    return depth;
-                if (curr.left != null)
-                    queue.offer(curr.left);
-                if (curr.right != null)
-                    queue.offer(curr.right);
+                TreeNode node = queue.poll();
+                if (node.left == null && node.right == null)
+                    return level;
+                if (node.left != null){
+                    queue.offer(node.left);
+                }
+                if (node.right != null){
+                    queue.offer(node.right);
+                }
             }
         }
-        return depth;
+        return level;
     }
 
 }
