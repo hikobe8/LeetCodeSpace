@@ -106,6 +106,6 @@ Top Down DFS 从上往下递归
 * [x] 中等[98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
 * [x] 简单[110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
 * [ ] 中等[113. 路径总和 II](https://leetcode-cn.com/problems/path-sum-ii/)
-* [ ] 中等[236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+* [x] 中等[236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 * [ ] 中等[450. 删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/)
 * [ ] 中等[508. 出现次数最多的子树元素和](https://leetcode-cn.com/problems/most-frequent-subtree-sum/)
